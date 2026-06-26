@@ -1,0 +1,162 @@
+/*==================================================
+ AD POST GRAPHICS
+ Main Stylesheet
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#222;
+    line-height:1.7;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{ text-decoration:none; }
+
+ul{ list-style:none; }
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/*=========================
+HEADER
+==========================*/
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:85px;
+}
+
+.logo h2{
+    color:#003B73;
+    font-size:32px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#C99A2E;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    color:#222;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{ color:#0055A5; }
+
+.quote-btn{
+    background:#0055A5;
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.quote-btn:hover{ background:#C99A2E; }
+
+/*=========================
+HERO
+==========================*/
+
+.hero{
+    margin-top:85px;
+    height:90vh;
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,40,80,.72);
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    color:white;
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:62px;
+    line-height:1.1;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    background:#C99A2E;
+    color:white;
+    padding:18px 40px;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#fff;
+    color:#003B73;
+}
+
+.btn-secondary{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+    padding:18px 40px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#003B73;
+}
